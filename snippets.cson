@@ -1,0 +1,61 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it here:
+# https://github.com/bevry/cson#what-is-cson
+
+ '.text.html':
+   'a-scene':
+     'prefix': 'ascene'
+     'body': """<a-scene>
+                  $1
+              </a-scene>"""
+    'a-camera':
+      'prefix': 'acamera'
+      'body': '<a-camera position="$1" cursor-visible="$2" cursor-scale="$3" cursor-color="$4"></a-camera>'
+    'a-cube':
+      'prefix': "acube"
+      'body': '<a-cube position="$1" rotation="$2" width="$3" height="$4" depth="$5" opacity="$6"></a-cube>'
+    'a-curvedimage':
+      'prefix': 'acurve'
+      'body': '<a-curvedimage src="$1" rotation="$2" radius="$3" theta-length="$4" height="$5" scale="$6"></a-curvedimage>'
+    'a-cylinder':
+      'prefix': 'acylinder'
+      'body': '<a-cylinder position="$1" rotation="$2" radius="$3" segments-radial="$4" color="$5"></a-cylinder>'
+    'a-image':
+      'prefix': 'aimage'
+      'body': '<a-image src="$1" width="$2" height="$3"></a-image>'
+    'a-light':
+      'prefix': 'alight'
+      'body': '<a-light position="$1" distance="$2" color="$3" type="$4"></a-light>'
+    'a-model':
+      'prefix': 'amodel'
+      'body': '<a-model src="$1.dae" scale="$2"></a-model>'
+    'a-plane':
+      'prefix': 'aplane'
+      'body': '<a-plane rotation="$1" width="$2" height="$3" color="$4"></a-plane>'
+    'a-sky':
+      'prefix': 'asky'
+      'body': '<a-sky src="$1" color="$2"></a-sky>'
+    'a-sphere':
+      'prefix': 'asphere'
+      'body': '<a-sphere position="$1" radius="$2" color="$3"></a-sphere>'
+    'a-video':
+      'prefix': 'avideo'
+      'body': '<a-video src="$1.mp4" position="$2" width="$3" height="$4"></a-video>'
+    'a-videosphere':
+      'prefix': 'avideosphere'
+      'body': '<a-videosphere src="$1.mp4" height="$2"><a-videosphere>'
